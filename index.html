@@ -1,84 +1,102 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flow 1 </title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        ::placeholder{
+            font-size: 8pt;
+        }
+        li{
+            font-size: 9pt;
+        }
 
-  </head>
+        h5{
+            font-size: 8pt;
+        }
 
+        .form-select{
+            font-size: 8pt;
+            text-align-last: center;
+        }
+
+    </style>
+</head>
 <body>
-  
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-6">
-                <img src="" alt="logo" class="logo">
-                <img src="" alt="producto" class="">
-                    <h3>Nombre del producto</h3>
-                    <p>Variante: 1kg</p>
-                    <p>Método de envío: Entrega por correo a domicilio</p>
-                    <br>
-
-                    <p>Costo:</p>
-                    <h2>$2500 por mes</h2>
-            </div>
-        
-        
-        
-            <div class="col-md-6 centrar">
-            <form action="" method="">
-                <ul>
-                    <li>
-                        <label for="">Tu mail</label>
-                        <input type="text" name="" class="input" required>
-                    </li>
-          
-                    <li>
-                        <label for="">Elige una opción</label>
-                        <select name="" class="input">
-                            <option value="1">Envío una vez por mes. (Entrega aprox. 15 días)</option> 
-                            <option value="2">Opción 2</option> 
-                            <option value="3">Opción 3</option>
-                        </select>
-                    </li>
-          
-                    <li>
-                        <label for="">¿Con qué frecuencia deseas recibir tu suscripción?:</label>
-                        <select name="" class="input">
-                            <option value="1">Envío una vez por mes. (Entrega aprox. 15 días)</option> 
-                            <option value="2">Envío una vez por semana</option> 
-                            <option value="3">Envío una vez por semana</option>
-                        </select>
-                    </li>
-          
-                    <li>
-                        <label for="">Elige el método de entrega</label>
-                        <select name="" class="input">
-                            <option value="1">Entrega por correo en domicilio. </option> 
-                            <option value="2">Envío una vez por semana</option> 
-                            <option value="3">Envío dos vez por semana</option>
-                        </select>
-                    </li>
- 
-                    <li>
-                        <button type="submit" class="button" >SIGUIENTE</button>
-                    </li>
-          
+    <div class="container" style="margin: 0 auto;">
+        <div class="row justify-content-evenly">
+            <div class="col-md-4">
+                <div class="d-grid gap-2 col-10 mt-1 mb-3">
+                    <img src="https://raw.githubusercontent.com/ACaminos/checkoutSegundoFigma/main/logo.jpg" alt="" width="189px" height="73px">
+                </div>
+            <div class="card w-100">
+                <img src="https://cf.ltkcdn.net/gatos/images/std/236641-800x515r1-etapas-desarrollo-gatitos.jpg" class="card-img-top" alt=""> <!--width="50px" height="250px"-->
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del producto</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Variante: &nbsp;1 Kg</li>
+                    <li class="list-group-item">Frecuencia: &nbsp;Envio una vez por mes (Aprox 15 del mes)</li>
+                    <li class="list-group-item">Metodo de envio: &nbsp;Entrega por correo a domicilio</li>
                 </ul>
-         
-            </form>
-       
-    
+                <div class="card-body">
+                    <li class="list-group-item">Costo total: &nbsp; <b>$2.500 por mes</b> </li>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 pt-5">
+                <form action="" method="post">
+                    <h5 style="text-align: center;">Tu mail: </h5>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-sm" id="" placeholder="Email" required>
+                    </div>
+                    
+
+                    <h5 style="text-align: center;" class="card-tittle">Elige una opción: </h5>
+                    <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option selected class="">Elija una opción</option>
+                        <option value="1">Envío una vez por mes (entrega aprox. 15 de mes)</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                      </select>
+                    </div>
+                    <h5 style="text-align: center;" class="card-tittle">¿Con qué frecuencia deseas recibir tu suscripción?: </h5>
+                    <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option selected>Elija una opción</option>
+                        <option value="1">Envío una vez por mes (entrega aprox. 15 de mes)</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                      </select>
+                    </div>
+                    
+
+                    <h5 style="text-align: center;" class="card-tittle">Elige el método de entrega: </h5>
+                    <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option selected>Elija una opción</option>
+                        <option value="1">Entrega por correo en domicilio</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                      </select>
+                    </div>
+
+                    <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                        <button type="button" class="btn btn-primary btn-sm">SIGUIENTE</button>
+                    </div>
+                </form>
+                
             </div>
         </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <footer>
+        <div class="poweredBy mt-3"><p style="text-align: center; font-size: 10pt; font-weight: 500;">Powered By Membly</p></div>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </html>
